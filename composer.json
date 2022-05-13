@@ -1,0 +1,48 @@
+{
+  "name": "sgn-dev/contao-cleverreach-bundle",
+  "type": "contao-bundle",
+  "description": "Establishes a connection between the Contao newsletter and the Cleverreach API.",
+  "homepage": "https://contao.org",
+  "license": "LGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Holger Neuner",
+      "homepage": "https://github.com/SgnAtWork"
+    }
+  ],
+  "require": {
+    "php": "^7.3 || ^8.0",
+    "contao/core-bundle": "^4.9",
+    "symfony/config": "^4.4 || ^5.1",
+    "symfony/dependency-injection": "^4.4 || ^5.1",
+    "symfony/http-kernel": "^4.4 || ^5.1"
+  },
+  "conflict": {
+    "contao/manager-plugin": "<2.0 || >=3.0"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.0",
+    "friendsofphp/php-cs-fixer": "^2.13",
+    "phpunit/phpunit": "^8.4",
+    "symfony/phpunit-bridge": "^4.4 || ^5.1"
+  },
+  "extra": {
+    "contao-manager-plugin": "SgnDev\\ContaoCleverreachBundle\\ContaoManager\\Plugin"
+  },
+  "autoload": {
+    "psr-4": {
+      "SgnDev\\ContaoCleverreachBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SgnDev\\ContaoCleverreachBundle\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "contao-components/installer": true,
+      "contao/manager-plugin": true
+    }
+  }
+}
