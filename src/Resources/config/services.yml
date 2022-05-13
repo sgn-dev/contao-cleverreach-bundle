@@ -8,3 +8,6 @@ services:
     resource: ../../../src
     exclude: ../../../src/{Entity,Migrations,Model,Resources,Tests,Widget}
 
+  SgnDev\ContaoCleverreachBundle\Http\Cleverreach\ApiClient:
+    public: false
+
