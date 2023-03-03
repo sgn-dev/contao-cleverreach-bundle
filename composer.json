@@ -12,19 +12,14 @@
   ],
   "require": {
     "php": "^7.3 || ^8.0",
-    "contao/core-bundle": "^4.9",
-    "symfony/config": "^4.4 || ^5.1",
-    "symfony/dependency-injection": "^4.4 || ^5.1",
-    "symfony/http-kernel": "^4.4 || ^5.1"
+    "contao/core-bundle": "^4.13"
   },
   "conflict": {
     "contao/manager-plugin": "<2.0 || >=3.0"
   },
   "require-dev": {
     "contao/manager-plugin": "^2.0",
-    "friendsofphp/php-cs-fixer": "^3.8",
-    "phpunit/phpunit": "^8.4",
-    "symfony/phpunit-bridge": "^4.4 || ^5.1"
+    "friendsofphp/php-cs-fixer": "^3.8"
   },
   "extra": {
     "contao-manager-plugin": "SgnDev\\ContaoCleverreachBundle\\ContaoManager\\Plugin"
@@ -42,7 +37,8 @@
   "config": {
     "allow-plugins": {
       "contao-components/installer": true,
-      "contao/manager-plugin": true
+      "contao/manager-plugin": true,
+      "php-http/discovery": true
     }
   }
 }
